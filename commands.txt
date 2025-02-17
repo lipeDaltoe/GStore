@@ -18,3 +18,11 @@ Criar Projeto:
 Executar o projeto
     dotnet run
     dotnet watch run
+
+Arquivo .csproj
+<Nullable>disable</Nullable>
+
+Models\ErrorViewModel
+tirar o ?
+
+Criar a camada de dados(Models)
