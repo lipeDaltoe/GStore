@@ -23,7 +23,7 @@ public class AppDbContext : IdentityDbContext<Usuario>
         AppDbSeed seed = new(builder);
         
         #region Renomear Tabelas do Identity
-        builder.Entity<IdentityUser>().ToTable("");
+        builder.Entity<IdentityUser>().ToTable("usuario");
         builder.Entity<IdentityUserRole<string>>().ToTable("usuario_perfil");
         builder.Entity<IdentityUserLogin<string>>().ToTable("usuario_login");
         builder.Entity<IdentityUserClaim<string>>().ToTable("usuario_regra");
