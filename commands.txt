@@ -34,3 +34,9 @@ Configurar a ConnectionString no appsettings.json
 Adicionar os serviços de Contexto e Identity no Program.cs
 
 LIGAR O XAMP RETARDADO!!!!!!!!!!!
+
+dotnet codegenerator
+
+dotnet aspnet-codegenerator controller -name CategoriasController --model Categoria --dataContext AppDbContext --layout "~/Views/Shared/_LayoutAdmin.cshtml" -outDir Controllers
+
+Erro de Scaffolding: seleciona o nome do pacote que tá mandando instalar, e coloca no nuget.org, pesquisa na barra e instala o primeiro (.NET 8.0)

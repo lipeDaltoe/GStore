@@ -27,10 +27,13 @@ public class AccountController : Controller
     }
 
     [HttpGet]
-    public IActionResult Registro()
+    public IActionResult Login(string, returnUrl)
     {
-        RegistroVM register = new();
-        return View(register);
+        LoginVM login = new(); 
+        {
+            UrlRetorno = returnUrl ?? Url.content("~/")
+        };
+        return View(login);
     }
 
 [HttpPost]
